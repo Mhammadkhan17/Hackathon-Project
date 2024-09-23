@@ -1,0 +1,47 @@
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #030000;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+header {
+  background: hsl(0, 49%, 48%);
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin:  20px auto;
+}
+.section {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+.section h2 {
+  cursor: pointer;
+  background: #ffffff;
+  color: #000000;
+  padding: 10px;
+  margin: 0;
+}
+.section-content {
+  display: none;
+  padding: 15px;
+}
+.section-content p {
+  margin: 0;
+}

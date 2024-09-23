@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Preview</title>
+    <style>
+        body { 
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f4; 
+        }
+        #resume { 
+            max-width: 800px; 
+            margin: 20px auto; 
+            padding: 20px; 
+            background: #fff; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            font-size: 24px; 
+            color: #333; 
+            margin-bottom: 20px; 
+        }
+        .editable-section { 
+            margin-bottom: 20px; 
+        }
+        .editable-section h2 { 
+            font-size: 20px; 
+            color: #555; 
+            border-bottom: 2px solid #ddd; 
+            padding-bottom: 5px; 
+            margin-bottom: 10px; 
+        }
+        button {
+            display: inline-block; 
+            font-size: 16px; 
+            font-weight: bold; 
+            color: #fff; 
+            background-color: #007bff; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 10px 20px; 
+            margin: 10px 5px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+        }
+        button:hover { 
+            background-color: #0056b3; 
+        }
+        button:active { 
+            background-color: #004494; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2); 
+        }
+        button:focus { 
+            outline: none; 
+        }
+        #download-button { 
+            background-color: #28a745; 
+        }
+        #download-button:hover { 
+            background-color: #218838; 
+        }
+        #download-button:active { 
+            background-color: #1e7e34; 
+        }
+        #reedit-button { 
+            background-color: #dc3545; 
+        }
+        #reedit-button:hover { 
+            background-color: #c82333; 
+        }
+        #reedit-button:active { 
+            background-color: #bd2130; 
+        }
+    </style>
+</head>
+<body>
+    <div id="resume"></div>
+    <button id="download-button">Download Resume</button>
+    <button id="reedit-button">Re-edit Resume</button>
+    <script src="preview.js"></script>
+</body>
+</html>

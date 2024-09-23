@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="resume">
+      <h1 contenteditable="true" data-placeholder="Your Name"></h1>
+      <div
+        id="education"
+        class="editable-section"
+        data-placeholder="Add your education details here"
+      >
+        <h2></h2>
+        <div
+          contenteditable="true"
+          data-placeholder="Degree, Major - University Name"
+        ></div>
+      </div>
+      <div
+        id="work-experience"
+        class="editable-section"
+        data-placeholder="Add your work experience here"
+      >
+        <h2>Work Experience</h2>
+        <div
+          contenteditable="true"
+          data-placeholder="Job Title at Company - Duration"
+        ></div>
+      </div>
+      <div
+        id="skills"
+        class="editable-section"
+        data-placeholder="Add your skills here"
+      >
+        <h2>Skills</h2>
+        <div
+          contenteditable="true"
+          data-placeholder="Skill 1, Skill 2, Skill 3"
+        ></div>
+      </div>
+      <div
+        id="projects"
+        class="editable-section"
+        data-placeholder="Add your projects here"
+      >
+        <h2>Projects</h2>
+        <div
+          contenteditable="true"
+          data-placeholder="Project Name - Description"
+        ></div>
+      </div>
+      <div
+        id="certifications"
+        class="editable-section"
+        data-placeholder="Add your certifications here"
+      >
+        <h2>Certifications</h2>
+        <div
+          contenteditable="true"
+          data-placeholder="Certification Name - Date"
+        ></div>
+      </div>
+      <div
+        id="contact"
+        class="editable-section"
+        data-placeholder="Add your contact information here"
+      >
+        <h2>Contact Information</h2>
+        <div contenteditable="true" data-placeholder="Email Address"></div>
+        <div contenteditable="true" data-placeholder="Phone Number"></div>
+      </div>
+      <button id="preview-button">Preview Resume</button>
+      <div id="preview-modal" class="modal hidden">
+        <div id="preview-content"></div>
+        <button id="close-preview">Close Preview</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
